@@ -13,6 +13,13 @@ function createEntry(entrytxt) {
   );
 }
 
+const newEmojiPedia = emojipedia.map(function (entryt) {
+  var desc = entryt.meaning;
+  return desc.substring(0, 100);
+});
+
+console.log(newEmojiPedia);
+
 function App() {
   return (
     <div>
