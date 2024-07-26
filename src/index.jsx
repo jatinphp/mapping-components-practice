@@ -4,8 +4,16 @@ import App from "./components/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-// If you're running this locally in VS Code use the commands:
-// npm install
-// to install the node modules and
-// npm run dev
-// to launch your react project in your browser
+function square(x) {
+  return x * x;
+}
+var numbers = [2, 8, 54, 45, 21];
+
+const newNumbers = numbers.map((x) => x * x);
+console.log(newNumbers);
+
+const newNumbers2 = numbers.filter((x) => x > 10);
+console.log(newNumbers2);
+
+const newNumbers3 = numbers.reduce((x, y) => x + y);
+console.log(newNumbers3);
